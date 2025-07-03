@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phan Plus Press</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #1f1c2c, #928dab);
+      color: #fff;
+      line-height: 1.6;
+      padding: 1rem;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 1rem;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2rem;
+      color: #ff00cc;
+    }
+
+     .video-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -1;
+        pointer-events: none;
+        opacity: 0.25;
+        transition: opacity 0.5s;
+    }
+
+    nav {
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #ff00cc;
+    }
+
+    .services {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(255, 0, 204, 0.3);
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .service-card:hover {
+      transform: scale(1.05);
+    }
+
+    .service-card h3 {
+      color: #ff00cc;
+      margin-bottom: 0.5rem;
+    }
+
+    .request-form {
+      margin-top: 3rem;
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(255, 0, 204, 0.4);
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .request-form h2 {
+      text-align: center;
+      color: #ff00cc;
+      margin-bottom: 1rem;
+    }
+
+    .request-form input,
+    .request-form textarea,
+    .request-form button {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border-radius: 10px;
+      border: none;
+      font-size: 1rem;
+    }
+
+    .request-form input,
+    .request-form textarea {
+      background: #1c1c1c;
+      color: #fff;
+    }
+
+    .request-form button {
+      background: linear-gradient(90deg, #ff00cc, #3333ff);
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s ease-in-out;
+    }
+
+    .request-form button:hover {
+      background: linear-gradient(90deg, #ff33cc, #6666ff);
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      nav a {
+        display: inline-block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<video class="video-bg" autoplay muted loop playsinline>
+    <source src="AdobeStock_250744824_Video_HD_Preview.mov" type="video/mp4">
+
+</video>
+
+<header>
+  <h1>Phan Plus Press</h1>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#request">Request</a>
+    <a href="#contact">Contact</a>
+    <a href="#login">Login</a>
+  </nav>
+</header>
+
+<section id="services" class="services">
+  <div class="service-card">
+    <h3>Printing</h3>
+    <p>High-quality color and B/W printing for all needs.</p>
+  </div>
+  <div class="service-card">
+    <h3>Photocopy</h3>
+    <p>Fast, clear and cost-effective copying services.</p>
+  </div>
+  <div class="service-card">
+    <h3>Graphics Design</h3>
+    <p>Custom designs for flyers, logos, and branding.</p>
+  </div>
+  <div class="service-card">
+    <h3>Book Binding</h3>
+    <p>Professional binding for books, reports, and more.</p>
+  </div>
+  <div class="service-card">
+    <h3>Banner Printing</h3>
+    <p>Large format banners and posters for events or business.</p>
+  </div>
+  <div class="service-card">
+    <h3>Lamination</h3>
+    <p>Protect important documents with high-quality lamination.</p>
+  </div>
+  <div class="service-card">
+    <h3>Form Registration</h3>
+    <p>Online and offline form filling and submission support.</p>
+  </div>
+  <div class="service-card">
+    <h3>IT Support</h3>
+    <p>Software installation, troubleshooting, and tech help.</p>
+  </div>
+</section>
+
+<section id="request" class="request-form">
+  <h2>Submit a Request</h2>
+  <form>
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="file" required>
+    <textarea placeholder="Describe your request..." rows="5" required></textarea>
+    <button type="submit">Submit Request</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Phan Plus Press. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

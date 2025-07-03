@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phan Plus Press</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: white;
+      overflow-x: hidden;
+    }
+    header {
+      padding: 1.5rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.8rem;
+      color: #ff00cc;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #ff00cc;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-family: 'Orbitron', sans-serif;
+      color: #ffffff;
+    }
+    .hero span {
+      color: #ff00cc;
+    }
+    .hero p {
+      margin: 1.5rem 0;
+      font-size: 1.1rem;
+      max-width: 700px;
+    }
+    .cta {
+      background: #ff00cc;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 3rem;
+    }
+    .service-box {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2rem;
+      border-radius: 15px;
+      text-align: center;
+      border: 1px solid #ffffff20;
+    }
+    .service-box h3 {
+      margin-bottom: 1rem;
+      color: #ff00cc;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #111;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Phan Plus Press</div>
+    <nav>
+      <a href="Phan Plus Home page.html">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Next-Level <span>Printing & IT</span> Services</h1>
+    <p>Experience premium quality printing, design, and IT solutions tailored to your needs. Whether it's books, banners, or business support—Phan Plus Press is here to deliver.</p>
+    <a href="Phan Plus form.html"><button class="cta">Get Started</button></a>
+  </section>
+
+  <section class="services" id="services">
+    <div class="service-box">
+      <h3>Printing & Photocopy</h3>
+      <p>High-quality printing and fast photocopying for all types of documents.</p>
+    </div>
+    <div class="service-box">
+      <h3>Graphics Design</h3>
+      <p>Creative and professional design for flyers, logos, and more.</p>
+    </div>
+    <div class="service-box">
+      <h3>Book Binding</h3>
+      <p>Durable and clean binding for documents, books, and reports.</p>
+    </div>
+    <div class="service-box">
+      <h3>Banner Printing</h3>
+      <p>Eye-catching banners for events, businesses, and promotions.</p>
+    </div>
+    <div class="service-box">
+      <h3>Lamination</h3>
+      <p>Protect your documents and photos with high-quality lamination.</p>
+    </div>
+    <div class="service-box">
+      <h3>Form Registration</h3>
+      <p>Efficient handling of online and offline form registrations.</p>
+    </div>
+    <div class="service-box">
+      <h3>IT Support Services</h3>
+      <p>Reliable tech support and solutions for small businesses and individuals.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Phan Plus Press. All rights reserved.
+  </footer>
+</body>
+</html>
